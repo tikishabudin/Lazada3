@@ -1,12 +1,16 @@
 package com.lazada.assets;
 
+import java.io.Serializable;
+
 //ABSTRACT RULES
 //1) A class with even 1 abstract method MUST be declared abstract
 //2) Abstract classes CANNOT be instantiated
 //3) All child classes of an abstract class MUST override ALL abstract methods
 
-public abstract class Account 
+public abstract class Account implements Serializable
 {
+	private static final long serialVersionUID = 1L;
+
 	private static int runningNumbers = 1;
 	
 	private int id;

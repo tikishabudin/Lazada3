@@ -1,12 +1,16 @@
 package com.lazada.assets;
 
+import java.io.Serializable;
+
 //class SuperSavingsAccount extends SavingsAccount
 //{
 //	
 //}
 
-public final class SavingsAccount extends Account 
+public final class SavingsAccount extends Account implements Serializable
 {
+	private static final long serialVersionUID = 3L;
+
 	public SavingsAccount(String name, double startingBalance)
 	{
 		super(name,startingBalance);

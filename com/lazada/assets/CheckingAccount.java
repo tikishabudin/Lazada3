@@ -1,7 +1,10 @@
 package com.lazada.assets;
 
-public class CheckingAccount extends Account 
+import java.io.Serializable;
+
+public class CheckingAccount extends Account implements Serializable
 {
+	private static final long serialVersionUID = 2L;
 	private static final double TRANSACTION_FEE = 0.5;
 	
 	public CheckingAccount(String name, double startingBalance)
